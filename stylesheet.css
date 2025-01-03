@@ -171,8 +171,7 @@ body {
 /* About Section */
 .about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: #290b1f;
+  grid-template-columns: repeat(1, 1fr); /* Ensures the image covers the section without distortion */
   align-items: center;
   gap: 2rem;
   padding: 50px 10%;
@@ -181,7 +180,7 @@ body {
 .about-img img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 .about-text h2 {
@@ -206,6 +205,72 @@ body {
   line-height: 1.4;
   margin-bottom: 4rem;
 }
+
+/* Education Section */
+.education {
+  padding: 80px 10%;
+  text-align: center;
+  background-color: #0f0f0f; /* Dark background for consistency with Skills section */
+  color: #fff;
+}
+
+.education h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.education h2 span {
+  color: #0ef; /* Highlighted color for "Education" */
+}
+
+.education-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Space between cards */
+}
+
+.education-item {
+  background-color: #fff; /* White background for contrast */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px; /* Consistent width with Skills section */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transition */
+  text-align: left; /* Left-aligned text for better readability */
+}
+
+.education-item:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.education-item h4 {
+  font-size: 1.2rem; /* Adjusted font size for headings */
+  color: #007bff; /* Highlighted heading color */
+  margin-bottom: 10px;
+}
+
+.education-item p {
+  font-size: 0.9rem; /* Font size for text */
+  color: #555; /* Neutral text color */
+  line-height: 1.4;
+  margin-bottom: 10px; /* Space between paragraphs */
+}
+
+.education-item ul {
+  list-style-type: disc; /* Disc bullets for lists */
+  padding-left: 20px; /* Indentation for list items */
+  margin-top: 10px; /* Space above the list */
+}
+
+.education-item ul li {
+  font-size: 0.9rem;
+  color: #555; /* Neutral list item color */
+  margin-bottom: 5px; /* Space between list items */
+}
+
 
 /* Skills Section */
 .skills {
@@ -306,11 +371,88 @@ body {
   color: #555;
   line-height: 1.4;
 }
+/* Certifications Section */
+.certifications {
+  padding: 80px 10%;
+  text-align: center;
+  background-color: #0f0f0f; /* Dark background for consistency */
+  color: #fff;
+}
+
+.certifications h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.certifications h2 span {
+  color: #0ef; /* Highlighted color for "Certifications" */
+}
+
+/* Certification Content */
+.certifications-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Space between certification items */
+}
+
+/* Certification Item */
+.certification-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 350px; /* Increased width for certification items */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+.certification-item:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Certification Title */
+.certification-item h4 {
+  font-size: 1.2rem;
+  color: #007bff; /* Highlighted title color */
+  margin-bottom: 10px;
+}
+
+/* Certification Description */
+.certification-item p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 10px; /* Space between paragraphs */
+}
+
+/* Courses List in Certification */
+.certification-item ul {
+  list-style-type: disc; /* Disc bullets for list items */
+  padding-left: 20px; /* Indentation for the bullet points */
+  margin-top: 10px;
+}
+
+.certification-item ul li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Highlighting specific text in the list */
+.certification-item ul li span {
+  font-weight: bold;
+  color: #333;
+}
+
+
+
 
 /* Projects Section */
 .projects {
   padding: 80px 10%;
-  background-color: #0f0f0f;
+  background-color: #352904;
   color: #fff;
   text-align: center;
 }
@@ -352,7 +494,7 @@ body {
   color: #555;
 }
 
-/* Contact Section */
+/* Contact Section
 .contact {
   padding: 80px 10%;
   background-color: #222;
@@ -411,7 +553,7 @@ body {
 
 .contact-form button:hover {
   background-color: #0056b3;
-}
+} */
 
 /* Smooth Scrolling */
 html {
