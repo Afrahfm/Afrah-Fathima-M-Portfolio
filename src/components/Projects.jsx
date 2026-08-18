@@ -29,7 +29,15 @@ const projects = [
     tech: ['Python', 'FastAPI', 'NLP', 'AIML'],
     description: 'An offline-first smart learning platform designed for low-connectivity environments that ensures zero data loss in attendance tracking. Features automatic timestamp-based conflict resolution and background sync on reconnection, completely eliminating manual data entry.',
     link: 'https://github.com/Afrahfm/ai-study-assistant'
+  },
+  {
+    title: 'Smart AI Career Guidance and Placement Readiness System',
+    subtitle: 'AI-Powered Career & Placement Platform',
+    tech: ['React.js', 'FastAPI', 'Python', 'NLP', 'Scikit-learn'],
+    description: 'An AI-driven career guidance platform that leverages NLP and machine learning for automated resume parsing, skill gap analysis, and personalized learning roadmaps. It features assessment tracking, a comprehensive placement readiness module, and an interactive AI chatbot to help students align their skills with industry demands.',
+    link: 'https://github.com/Afrahfm/smart_career_guidance1-main.git' // Be sure to verify this repo URL
   }
+
 ];
 
 export default function Projects() {
